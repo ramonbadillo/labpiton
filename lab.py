@@ -1,9 +1,43 @@
-def power2(set):
+##Task 6.1
+##import math
+
+
+## Task 6.2
+##from random import radint
+
+## 6.3
+
+
+## 6.4
+
+def makeInverseIndex(strlist):
     """
-    >>> power2({0,1,2,3,4})
-    {8, 1, 2, 16, 4,5,4}
+    >>> makeInverseIndex()
+    Cosa
     """
-    return {2**x for x in {0,1,2,3,4}}
+    
+    f = open('stories_big.txt')
+    for line in f:
+        print(line)
+    
+    for x in [1,2,3]:
+        y = x*x
+        print(y)
+        
+
+
+
+
+def readFile():
+    """
+    >>> readFile()
+    True
+    """
+    
+    f = open('stories_big.txt')
+    ##for line in f:
+        ##print(line)
+    return f is not None
 
 if __name__ == "__main__":
     import doctest
